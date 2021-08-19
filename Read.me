@@ -7,18 +7,20 @@ Como se trata de uma aplicação importante para a empresa,
 estamos criando um monitoramento em tempo real para esse
 servidor.
 O principal objetivo é sinalizar toda as vezes que a CPU
-sair do limite 60 até 70 e marcar o histório de todos os 
-processos que ultrapassaram 90% de consumo.
+sair do limite até 50%, de 50% até 70% e de 70% até 100%,
+além marcar o histório de todos os processos que
+ultrapassaram 90% de consumo.
 
 
 Tarefa:
 
-Implementar um alerta por cor o uso da CPU:
--  Quando o uso da CPU for maior ou igual a 70, chame atenção do usuário com
-a cor vermelha;
--  quando for menor ou igual a 60, deixe como azul.
+Implementar com um alerta de cor o uso da CPU:
+-  Quando o uso da CPU for maior ou igual a 70%, chame
+atenção do usuário com a cor vermelha;
+-  quando for menor ou igual a 50%, deixe como azul.
+-  Se estiver entre 50% e 70%, alerte com a cor amarela.
 
-Implementar histório de processos que ultrapassaram 90:
+Implementar histório de processos que ultrapassaram 90%:
 
--  Adicionar na tabela de histórico o nome do processo, a CPU que ele atingiu 
-e a data e hora que ocorreu
+-  Adicionar na tabela de histórico o nome do processo,
+a CPU que ele atingiu e a data e hora que ocorreu.
