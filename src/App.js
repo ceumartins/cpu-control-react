@@ -30,7 +30,8 @@ export default function App() {
               <h4 className="my-0 fw-normal">Uso da CPU</h4>
             </div>
             <div
-              className={`card-body ${cpu <= 60 && "bg-primary"}
+              className={`card-body ${cpu <= 50 && "bg-primary"}
+            ${cpu >50 && "bg-warning"}
             ${cpu >= 70 && "bg-danger"}
             `}
             >
